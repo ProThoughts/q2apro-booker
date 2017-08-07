@@ -1,0 +1,609 @@
+/* Used on booking page for contractor listing */
+body.booking {
+    .contractorname {
+        margin-bottom: 10px;
+    }
+    .qa-sidepanel {
+        display:none;
+    }
+
+    .qa-error {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .entireprofile {
+        display:block;
+        margin-bottom:50px;
+    }
+
+    .profilewrap {
+        display: inline-block;
+        width: auto;
+        float: none;
+        vertical-align: top;
+        margin: -5px 50px 0 0;
+        border: 0;
+        text-align: right;
+        clear: both;
+    }
+    .profilebox {
+        display:inline-block;
+        float:left;
+        width:auto;
+
+        .bookingbutton {
+            display: block;
+            width: 100%;
+
+            span:first-child {
+                margin-right: 12px;
+            }
+        }
+    }
+    .q2apro_hs_avatar {
+        display: block;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .profile-avatarimg {
+        position: relative;
+        //width: 200px;
+        //height: 200px;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+
+        &:after {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            content: "";
+        }
+    }
+    #adminbtn {
+        position:absolute;
+        right: 0;
+        top:10px;
+        font-size:11px;
+    }
+    /*
+    .bookingbutton span:nth-child(1) {
+        display:block;
+        font-size:20px;
+    }
+    .bookingbutton span:nth-child(2) {
+        font-size:17px;
+    }
+    */
+    //.forumprofilelink,
+    .bookershortlink {
+        display:inline-block;
+        width:24px;
+        height:24px;
+        border-radius: 3px;
+        border: 1px solid #DDD;
+        background: #FFF;
+        background:rgba(255,255,255,0.9);
+        text-align:center;
+        padding-top:3px;
+    }
+    .bookershortlink {
+        right:5px;
+    }
+
+    .shareoptions {
+        display: block;
+
+    }
+
+    .qa-favoriting i, 
+    .forumprofilelink i, 
+    .bookershortlink i, 
+    .fbsharelink i {
+        color:#999;
+        cursor:pointer;
+    }
+    .qa-favoriting:hover i, 
+    .forumprofilelink:hover i, 
+    .bookershortlink:hover i, 
+    .fbsharelink:hover i {
+        color:#77F !important;
+    }
+    .followerstub {
+        display:block;
+        margin-top:10px;
+        color:#359 !important;
+        text-align:center;
+    }
+    .followerstublink {
+        text-decoration:none !important;                    
+        color:#359 !important;
+    }
+    .followerstublink:hover {
+        color:#57A !important;
+    }
+    .followerstubicon {
+        cursor:default;
+    }
+    .qa-favoriting {
+        position:static;
+        margin:0 !important;
+        text-align:right;
+        top: 0;
+        right: 0;
+    }
+    .qa-main > h1:first-child {
+        display: none
+    }
+    .headlinespan {
+        display: none;
+    }
+    .specialoffers_wrap {
+        display: block;
+        width: 100%;
+        clear: both;
+        vertical-align: top;
+        padding:0;
+        margin: 0 0 40px 0;
+        background: #FFF;
+        text-align: left;
+    }
+    .specialoffershead {
+    }
+    ul.specialoffers {
+        margin:0;
+        padding:0;
+        list-style-type:none;
+    }
+    ul.specialoffers li {
+        float:left;
+        margin:0 15px 0 0;
+        padding:5px 0;
+    }
+    ul.specialoffers .defaultbutton {
+        margin:0 20px 0 0;
+    }
+    .offeritem {
+        display:inline-block;
+        max-width:240px;
+        padding:7px 10px;
+        border-radius:2px;
+        text-decoration:none !important;
+        background:#FCFCFF;
+        color:#333;
+        border:1px solid #CCF;
+    }
+    .offeritem:hover {                  
+        background:#3333EE; /*#75A;*/
+        /*
+        background:#75A;
+        border:1px solid #95F;
+        */
+        color:#FFF;
+    }
+    .offerduration, .offerend {
+        margin:20px 0;
+    }
+    .offerending {
+        font-size:11px;
+        color:#789;
+    }
+    .contractorrealname {
+        margin:5px 0 0 0;
+    }
+    .conbooklink {
+        display:block;
+        width:200px;
+        color:#55F;
+        text-decoration:none !important;
+        font-size:17px;
+        cursor:default;
+    }
+    /*.contractorminprice {
+        background:#FF7;
+        display:inline-block;
+        padding:7px 15px;
+        border:1px solid #EEE;
+        margin-left:10px;
+        font-size:18px;
+    }*/
+    .ratingswrap {
+        margin:50px 0 50px 0;
+    }
+
+    .calchoosetime {
+        //margin-bottom:20px;
+    }
+    .generalweek {
+        display:inline-block;
+        margin-left:14px;
+        font-size:12px;
+    }
+    #calendar {
+        max-width: 880px;
+        margin: 20px 0 20px 0;
+
+        .fc-day-header.fc-today {
+            color: #fff;
+            border: 2px solid $blue;
+            border-top: 2px solid $blue;
+            border-width: 2px 2px 0;
+            background: $blue;
+        }
+    }
+
+    .fc-left h2, 
+    .fc-center h2, 
+    .fc-right h2 {
+        clear:none;
+        padding-top:5px;
+    }
+    /* make sure background events stay in bg */
+    .fc-time-grid .fc-bgevent {
+        z-index:-50;
+    }
+    /* today is always unselectable */
+    .fc-unthemed .fc-today {
+        background: #f3f9ff;
+        border: 2px solid $blue;
+    }
+    .fc-view-container {
+        background:#FFF;
+    }
+    /*.fc-agendaWeek-button {
+        display:none;
+    }*/
+    .bookingtablewrap {
+        width: 92%;
+        display: block;
+    }
+    #bookingtable {
+        display:inline-block;
+        border-collapse:collapse;
+        margin-top:5px;
+        line-height:140%;
+    }
+    #bookingtable td, #bookingtable th {
+        padding:3px 5px;
+        font-size:15px;
+        font-weight:normal;
+        border:1px solid #DDD;
+        background:#FFF;
+    }
+    #bookingtable tr {
+    }
+    #bookingtable th {
+        font-weight:normal;
+    }
+    #bookingtable td {
+        text-align:right;
+    }
+    #event0 {
+        display:none;
+    }
+    /*
+    #bookingtable td:first-child {
+        text-align:center;
+    }
+    #bookingtable td:last-child {
+        text-align:center;
+        vertical-align:top;
+    }*/
+
+    .bookmehold, .bookmeholder {
+        /*display:block;*/
+        width:100%;
+        /*text-align:right;*/
+    }
+    .booktime, .bookcalc, .booktimeabs, .booktimehours, .bookdel {
+    }
+    .bookdel {
+        cursor:pointer;
+    }
+    .deletebookevent {
+        display:inline-block;
+        padding:5px;
+    }
+    #sumrow td {
+        font-weight:bold !important;
+    }
+    #bookme {
+        margin:20px 0 10px 0;
+    }
+    .needsholder {
+        margin:50px 0 30px 0;
+    }
+    .condata_wrap input {
+        border:1px solid #CCC;
+        padding:5px;
+    }
+    input#address {
+        width:300px;
+    }
+    input#birthdate {
+        width:120px;
+    }
+    .fc-event {
+        font-size:0.95em;
+    }
+    .fc-past {
+        background:#EEE;
+    }
+    .event-notavailable .fc-time {
+        display:none;
+    }
+    .selectionpreview {
+        display:none;
+        margin:20px 0 20px 0;
+    }
+    .selectionpreivew_imghold {
+        display:inline-block;
+        width:180px;
+    }
+    .mousehints {
+        display:inline-block;
+        width:40%;
+        vertical-align:top;
+        font-size:12px !important;
+    }
+    .calselhelpwrap {
+        display:inline-block;                   
+        width:100%;
+        /*max-width:600px;*/
+    }
+    #calselecthelp {
+        display: inline-block;
+        color: #236CBD;
+        font-size: 12px;
+        cursor: pointer;
+        text-decoration: none !important;
+        border-bottom: 1px dashed #CCF;
+    }
+    #calselecthelp:hover {
+        color: #123;
+    }
+
+    .portfoliowrap {
+        position:relative;
+        width:90%;
+        max-width:600px;
+        float:left;
+        margin-bottom:20px;
+    }
+    .contractorservice {
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+    .serviceheadline {
+        font-size:22px !important;
+        margin-bottom:0;
+    }
+    .serviceheadline .contractorservice {
+        display:inline-block;
+        text-decoration:none;
+    }
+    .serviceheadline .contractorservice:hover {
+        color:#5A5;
+    }
+
+    .locationbox {
+        padding:0 0 30px 1px;
+        background:none;
+        border-bottom:1px solid #E5E5E5;
+    }
+    #dvDistance {
+        display:inline-block;
+        margin:0;
+    }
+    .locationlink {
+        margin-right:20px;
+    }
+    .offerwrap {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+
+    // General profile layout
+    .qa-part-custom {
+        box-shadow: 0 3px 16px rgba(0,0,0,0.2);
+    }
+    .entireprofile,
+    .offerwrap,
+    .bcalendar-wrap {
+        position: relative;
+        margin-bottom: 0;
+        padding: 50px;
+        overflow: hidden;
+        background: #f7f7f7;
+        background: #fff;
+    }
+    .entireprofile {
+        border-bottom: 1px solid #E5E5E5;
+    }
+    .offerwrap {
+        background: #f7f7f7;
+    }
+    .bcalendar-wrap {
+        background: #fff;
+    }
+
+    @media (max-width: 768px ) {
+        .entireprofile,
+        .offerwrap,
+        .bcalendar-wrap {
+            padding: 20px;
+        }
+    }
+
+
+    .portfoliobox a, .locationlink, .fa-map-marker {
+        color:#236CBD;
+    }
+    .fa-map-marker {
+        vertical-align:top;
+    }
+    .portfoliobox {
+        /*min-height:240px;*/
+    }
+    .portfoliobox {
+        padding:20px 10px 10px 0px;
+        color:#444;
+    }
+    .portfoliobox img {
+        max-width:95%;
+        cursor:zoom-in;
+    }
+    .imgmaxsize {
+        max-width:95% !important;
+        /*cursor:zoom-out !important;*/
+        cursor:default !important;
+    }
+
+    .deletebookevent .fa-remove {
+        color:#FAA;
+    }
+    .deletebookevent .fa-remove:hover {
+        color:#F00;
+    }
+    /**
+    .fbsharelink, .forumprofilelink, 
+    .qa-template-booker.booking .qa-favoriting
+    {
+        display:inline-block;
+        width:auto;
+        height:22px;
+        text-decoration:none !important;
+        line-height:22px;
+        padding:0 7px 0 5px;
+        background:#FFF;
+        background:rgba(255,255,255,0.9);
+        border-radius:3px;
+        border:0;
+        cursor:pointer;
+    }
+    .favoriteform {
+        display:inline-block;
+        z-index: 2000;
+    }
+    .qa-template-booker.booking .qa-favorite-button,
+    .qa-template-booker.booking .qa-unfavorite-button {
+        background:transparent !important;
+        border:0;
+        padding:0;
+        margin:0 0 0 3px;
+        font-size:12px;
+        color:#555 !important;
+        line-height: 190%;
+    }
+    .fa-male {
+        color:#777;
+    }
+    .fbsharespan, .forumlinkspan {
+        color:#123;
+        cursor:pointer;
+        font-size:12px;
+    }
+    .qa-favoriting:hover .qa-favorite-button,
+    .qa-favoriting:hover .qa-unfavorite-button,
+    .fbsharelink:hover .fbsharespan, 
+    .forumprofilelink:hover .forumlinkspan {
+        color:#77F !important;
+    }
+    /**/
+
+    .premium-badge {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        top: 20px;
+        right: 20px;
+    }
+    .icon-badge {
+        color: $blue;
+        font-size: 55px;
+    }
+
+
+    &.isoffer {
+        /* hide dragger to disalow resize */
+        .fc-resizer.fc-end-resizer { 
+            display: none; 
+        }
+        .bookingbutton, .contractorprice {
+            display:none;
+        }
+        .profilebox {
+            float:right !important;
+        }
+        .shareoptions {
+            display:none;
+        }
+        .profilewrap {
+            margin-right:0;
+            margin-left: 30px;
+        }
+        .pricewrap {
+            margin-bottom:20px;
+        }
+        .offerprice {
+            font-size:27px;
+        }
+        .pricewrap .defaultbutton {
+            padding:10px 50px;
+        }
+        #bookingtable th, #bookingtable td {
+            background:#FFC !important;
+        }
+        #bookingtable th:nth-child(2), #bookingtable td:nth-child(2), 
+        #bookingtable th:nth-child(3), #bookingtable td:nth-child(3) {
+            display:none;
+        }
+        #sumrow {
+            display:none;
+        }
+        #bookingtable td {
+            padding:0 15px;
+        }
+        #bookingtable th {
+            text-align:center;
+        }
+    }
+
+
+    /* smartphones */
+    @media only screen and (max-width:800px) {
+        .profilebox {
+            float:none;
+            margin:0 0 30px 0;
+        }
+        .profilewrap {
+            margin:0;
+        }
+        .portfoliowrap, .offerwrap {
+            width:95%;
+        }
+        .favoriteform {
+            display:block;
+            margin-bottom:10px;
+        }
+        #calselecthelp {
+            float:none;
+            margin-top:0px;
+        }
+    }
+    /* smartphones */
+    @media only screen and (max-width:480px) {
+        .mousehints {
+            width:95%;
+            margin-top:10px;
+        }
+    }
+}
